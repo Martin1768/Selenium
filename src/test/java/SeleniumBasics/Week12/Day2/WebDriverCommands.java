@@ -23,7 +23,7 @@ public class WebDriverCommands {
             System.out.println("Open website '" + driver.getTitle() + "' " + ((passed) ? msgPassed : msgFailed));
 
             //    3. The user navigates to `https://www.syntaxprojects.com/`, and the page title is printed correctly.
-            driver.get("https://www.syntaxprojects.com/");
+            driver.navigate().to("https://www.syntaxprojects.com/");
             passed = driver.getTitle().equals("Syntax - Website to practice Syntax Automation Platform");
             passedAll = passedAll && passed;
             System.out.println("Navigate to '" + driver.getTitle() + "' " + ((passed) ? msgPassed : msgFailed));
